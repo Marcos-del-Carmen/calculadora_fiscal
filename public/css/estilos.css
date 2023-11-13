@@ -12,6 +12,26 @@
     font-family: 'Poppins', sans-serif;
 }
 
+main {
+    width: 95%;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn_primario {
+    background: #0C7FC0;
+    color: #fff;
+}
+
 .cuerpo {
     background-image: url(../img/fondo1.jpg);
     background-size: cover;
@@ -136,9 +156,6 @@ main{
     outline: none;
 }
 
-
-
-
 .formulario__login{
     opacity: 1;
     display: block;
@@ -181,7 +198,8 @@ main{
     }
 }
 
-/* ESTILOS DE HOME */
+/******************** ESTILOS DE HOME ***************************/
+
 .cont_home {   
     height: 100vh;
     display: flex;
@@ -245,37 +263,240 @@ main{
 .cont_menu {
     width: 95%;
     margin: 0px auto;
-    height: 60px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    height: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     background-color: #007521;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.cont_icon_home {
-    width: 250px;
-    height: 60px;
+
+.cont_menu .enlaces a {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px;
+    transition: all .7s;
 }
 
-.cont_icon_info {
-    background-color: #3d3d3d;
-    width: 150px;
-    height: 60px;
+.cont_menu .enlaces a:hover {
+    color:#333;
 }
 
-.cont_menu i {
+.cont_menu .enlaces .activo {
+    background-color: #fff;
+    color: #005f03;
+    border-radius: 5px;
+}
+
+.cont_menu .logo i,
+.cont_menu .logo h2 {
+    color: #fff;
+    display: inline-block;
+    
+}
+
+.cont_menu .logo i {
+    font-size: 2.2em;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.cont_menu .logo h2 {
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+.cont_btns a button {
+    background-color: #00000000;
+    border: none;
+}
+
+.cont_btns a button i {
     font-size: 2.2em;
     color: #fff;
+    margin-right: 20px;
+}
+/* ESTILOS DE TARGETAS  **************************************************************/
+
+.container__slider{
+    max-width: 500px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
 }
 
-.cont_menu a i:hover {
+input[type=radio]{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;    
+    left: 0;
+    right: 0;
+    margin: auto;    
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card a {
     display: block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #333;
 }
 
-.title {
-    color: #007521;
+img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-60%) scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(60%) scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+
+/* FIN DE ESTILOS DE TARDEJTAS  */
+
+
+/* ESTILOS DE TARJETAS DE CONTRIBUYENTES */
+.title-h2 {
+    text-align: center;
+}
+
+.cont_cards {
+    width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card_c {
+    width: 30%;
+    margin: 15px auto;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+}
+
+.card_c .icon {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_c .icon i {
+    font-size: 3.5em;
+    color: #4CAF50;
+}
+.card_c .info {
+    width: 75%;    
+    margin-left: 10px;
+}
+
+.cont_btns_card_c {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn_card_c {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/***********************************************************************/
+
+/* ESTILOS PARA COMBOS DE FORMULARIOS */
+
+.tarjeta_comb {
+    width: 85%;
+    margin: 20px auto;
+    
+}
+
+.tarjeta_comb .tc_cabezera {
+    width: 100%;
+    height: 60px;
+    background-color: #292D32;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.tarjeta_comb .tc_cabezera i {
+    color: #fff;
+    font-size: 2.4em;
+}
+
+.tarjeta_comb .tc_cabezera i {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.tarjeta_comb .tc_cabezera h2 {
+    color: #fff;
+    margin-left: 15px;
+}
+
+.tarjeta_comb .tc_cuerpo {
+    height: 400px;
+    background-color: #484848;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* FIN DE ESTILOS DE HOME */

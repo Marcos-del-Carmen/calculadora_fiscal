@@ -20,22 +20,109 @@
             <i class="fa-solid fa-file-excel"></i>
         </div>
     </div>
+
     <div class="cont_menu">
-        <div class="cont_icon_home">
-            <div class="icon">
-                <i class="fa-solid fa-calculator"></i>
+        <div class="logo">
+            <i class="fa-solid fa-calculator"></i>
+            <h2>Calculadora fiscal</h2>
+        </div>    
+        <div class="cont_btns">
+
+            <a href="#" class="btn">
+                <button>
+                    <i class="fa-regular fa-user"></i>
+                </button>
+            </a>
+            <a href="#" class="btn">
+                <button>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container__slider">
+
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+
+            <div class="cards">
+                <label class="card" for="item-1" id="selector-1">
+                    <img src="../../public/img/img.png" alt="error de imagen">
+                    <a href="../views/calculadoraIVA.php">IVA</a>
+                </label>
+                <label class="card" for="item-2" id="selector-2">
+                    <img src="../../public/img/img.png" alt="error de imagen">
+                    <a href="../views/calculadoraISR.php">ISR</a>
+                </label>
+                <label class="card" for="item-3" id="selector-3">
+                    <img src="../../public/img/img.png" alt="error de imagen">
+                    <a href="../views/contribuyentes.php">CONTRIBUYENTES</a>
+                </label>
+
             </div>
-            <div class="title"><h2>Calculadora Fiscal</h2></div>
         </div>
 
-        <div class="cont_icon cont_icon_info">
-            <a href="#">
-                <i class="fa-regular fa-user"></i>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-right-from-bracket"></i>
-            </a>
+    </div>
+    
+    <h2 class="title-h2">CONTRIBUYENTES RESIENTES</h2>
+    <div class="cont_cards">
+        <!-- ESTA ES UNA TARJETA PARA LOS CONTRIBUYENTES -->
+        
+        <div class="card_c">
+            <div class="icon">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="info">
+                <p><b>Nombre completo</b></p>
+                <p>Panfilo Perez García</p>
+                <p><b>CURP</b></p>
+                <p>PEGA9812983H</p>
+                <p><b>RFC</b></p>
+                <p>GAPE983H</p>
+                <div class="cont_btns_card_c">
+                    <button class="btn_primario btn_card_c">IVA</button>
+                    <button class="btn_primario btn_card_c">ISR</button>
+                </div>
+            </div>
         </div>
+        <div class="card_c">
+            <div class="icon">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="info">
+                <p><b>Nombre completo</b></p>
+                <p>Panfilo Perez García</p>
+                <p><b>CURP</b></p>
+                <p>PEGA9812983H</p>
+                <p><b>RFC</b></p>
+                <p>GAPE983H</p>
+                <div class="cont_btns_card_c">
+                    <button class="btn_primario btn_card_c">IVA</button>
+                    <button class="btn_primario btn_card_c">ISR</button>
+                </div>
+            </div>
+        </div>
+        <div class="card_c">
+            <div class="icon">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="info">
+                <p><b>Nombre completo</b></p>
+                <p>Panfilo Perez García</p>
+                <p><b>CURP</b></p>
+                <p>PEGA9812983H</p>
+                <p><b>RFC</b></p>
+                <p>GAPE983H</p>
+                <div class="cont_btns_card_c">
+                    <button class="btn_primario btn_card_c">IVA</button>
+                    <button class="btn_primario btn_card_c">ISR</button>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>
